@@ -1,0 +1,79 @@
+/* Base css */
+body{
+    background-color: 
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+margin: 0 0 15px;
+font-weight: 700;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+a:hover{text-decoration: none;}
+
+.zigzag-text-bg-1{
+    background-image: url(../img/5.jpg);
+}
+.zigzag-text-bg-2{
+    background-image: url(../img/3.jpg);
+}
+.section-padding {
+    background-size: cover;
+    background-position: center;
+}
+
+.zigzag-text {
+    position: relative;
+    z-index: 2;
+    padding-right: 50px;
+    color: #fff;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.zigzag-text:after {
+    position: absolute;
+    top: 0;
+    left: -4900%;
+    height: 100%;
+    width: 5000%;
+    content: "";
+    background-color: green;
+    z-index: -1;
+    transform: skew(10deg);
+    opacity: .8;
+}
+
+a.boxed-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.zigzag-text-bg-2 .zigzag-text:after {
+    left: auto;
+    right: -4900%;
+}
+
+.zigzag-text-bg-2 .zigzag-text {
+    padding-right: 0;
+    padding-left: 50px;
+}
+
+.section-padding.zigzag-text-bg-2 {
+    overflow: hidden;
+}
